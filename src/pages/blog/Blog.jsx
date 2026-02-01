@@ -3,7 +3,7 @@ import IntroSpan from "./../../component/introSpan";
 import { response } from './../data/data';
 import Button from "../../component/Button";
 import ArticleCard from './../../component/ArticleCard';
-import "./Blog.css"
+import "./blog.css"
 export default function Blog() {
   const {categories,posts}=response;
   const [activeCategory, setActiveCategory] = useState("all");
