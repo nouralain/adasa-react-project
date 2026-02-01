@@ -2,8 +2,9 @@ import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import Button from "../Button";
-
+import logo from "../../assets/logo.png"
 export default function Navbar() {
+
   return (
     <>
       <nav className="navbar navbar-expand-md gray500-bg py-3 fixed-top">
@@ -14,7 +15,7 @@ export default function Navbar() {
           >
             <div className="navbar-brand h-48 w-48">
               <img
-                src="/src/assets/logo.png"
+                src={logo}
                 alt="adasa logo"
                 className="w-100 h-100 "
               />
