@@ -1,0 +1,19 @@
+.category-span{
+    background-color: #f974161d;
+    border: 1px solid #f974163d;
+}
+.author-img{
+    width: 48px;
+    height: 48px;
+}
+.author-img::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--orange500);
+    border: 2px solid var(--gray500);
+}

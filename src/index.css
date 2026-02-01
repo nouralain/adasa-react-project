@@ -1,0 +1,244 @@
+body{
+    font-family: "Tajawal", sans-serif;
+    color: #fff;
+    direction: rtl;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+:root {
+  
+  --text-xs: 0.75rem;
+  --text-xs-line-height: calc(1 / 0.75);
+
+  --text-sm: 0.875rem;
+  --text-sm-line-height: calc(1.25 / 0.875);
+
+  --text-base: 1rem;
+  --text-base-line-height: calc(1.5 / 1);
+
+  --text-lg: 1.125rem;
+  --text-lg-line-height: calc(1.75 / 1.125);
+
+  --text-xl: 1.25rem;
+  --text-xl-line-height: calc(1.75 / 1.25);
+
+  --text-2xl: 1.5rem;
+  --text-2xl-line-height: calc(2 / 1.5);
+
+  --text-3xl: 1.875rem;
+  --text-3xl-line-height: calc(2.25 / 1.875);
+
+  --text-4xl: 2.25rem;
+  --text-4xl-line-height: 56px;
+
+  --text-5xl: 3rem;
+  --text-5xl-line-height: 60px;
+
+  --text-6xl: 3.75rem;
+  --text-6xl-line-height: 75px;
+
+  --gray100:#A1A1A1;
+  --gray200:#737373;
+  --gray300:#525252;
+  --gray500: #161616;
+--gray600:#111111;
+--border-color: #262626;
+--orange100:#FA9B1D;
+--orange200:#ff8904;
+--orange300:#f97316;
+--orange400:#F56C13;
+--orange500:#FF6900;
+
+--orange-gradient1: linear-gradient(135deg,rgba(249, 115, 22, 1) 0%, rgba(251, 191, 36, 1) 64%);;
+--orange-gradient2:linear-gradient(156deg,rgba(255, 105, 0, 1) 0%, rgba(240, 177, 0, 1) 100%);
+--orange-gradient3:linear-gradient(306deg,rgba(245, 74, 0, 1) 0%, rgba(255, 105, 0, 1) 54%);
+--orange-gradient4:linear-gradient(135deg,#f97316,#ea580c)
+
+}
+.gray-border{
+  border: 1px solid var(--border-color);
+}
+.gray100-text{
+  color: var(--gray100);
+}
+.gray200-text{
+  color: var(--gray200);
+}
+.gray300-text{
+  color: var(--gray300);
+}
+.orange100-text{
+  color: var(--orange100);
+}
+.orange200-text{
+  color: var(--orange200);
+}
+
+.orange300-text{
+  color: var(--orange300);
+}
+.orange500-text{
+  color: var(--orange500);
+}
+.bg-orange-500{
+  background-color: var(--orange500);
+}
+.bg-gray-500{
+  background-color: var(--gray500);
+}
+.bg-gray-600{
+  background-color: var(--gray600);
+}
+
+.orange-gradient1{
+  background-image: var(--orange-gradient1);
+}
+.orange-gradient2{
+  background-image: var(--orange-gradient3);
+}
+.orange-gradient3{
+  background-image: var(--orange-gradient3);
+}
+.orange-gradient4{
+  background-image: var(--orange-gradient4);
+}
+.gray500-bg{
+  background-color: var(--gray500);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+  line-height: var(--text-xs-line-height);
+}
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--text-sm-line-height);
+}
+.text-base {
+  font-size: var(--text-base);
+  line-height: var(--text-base-line-height);
+}
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: var(--text-lg-line-height);
+}
+.text-xl {
+  font-size: var(--text-xl);
+  line-height: var(--text-xl-line-height);
+}
+.text-2xl {
+  font-size: var(--text-2xl);
+  line-height: var(--text-2xl-line-height);
+}
+.text-3xl {
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl-line-height);
+}
+.text-4xl {
+  font-size: var(--text-4xl);
+  line-height: var(--text-4xk-line-height);
+}
+.text-5xl {
+  font-size: var(--text-5xl);
+  line-height: var(--text-5xl-line-height);
+}
+.text-6xl {
+  font-size: var(--text-6xl);
+  line-height: var(--text-6xl-line-height);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
+.object-center {
+  object-position: center;
+}
+
+.w-24{
+  width: 24px;
+}
+.h-24{
+  height: 24px;
+}
+.w-32{
+  width: 32px;
+}
+.h-32{
+  height: 32px;
+}
+.w-40{
+  width: 40px;
+}
+.h-40{
+  height: 40px;
+}
+.w-44{
+  width: 44px;
+}
+.h-44{
+  height: 44px;
+}
+.w-48{
+  width: 48px;
+}
+.h-48{
+  height: 48px;
+}
+.w-64{
+  width: 64px;
+}
+.h-64{
+  height: 64px;
+}
+.w-96{
+  width: 96px;
+}
+.h-96{
+  height: 96px;
+}
+
+.pt-80px{
+  padding-top: 80px;
+}
+
+.bg-clip-text{
+background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+  .px-32{
+    padding-inline: 32px;
+  }
+
+  .fit-content{
+    width: fit-content;
+  }
