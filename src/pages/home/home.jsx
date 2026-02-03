@@ -12,16 +12,19 @@ export default function Home() {
 
   return (
     <>
-      <section className=" pt-5 bg-black">
-        <div className="container-fluid container-xl  d-flex flex-column justify-content-center align-items-center gap-4 px-4">
+      <section className=" pt-5 square-pattern position-relative overflow-hidden">
+           <div className="gradient1"></div>
+        <div className="gradient2"></div>
+        <div className="gradient3"></div>
+        <div className="container-fluid container-xl position-relative z-3 d-flex flex-column justify-content-center align-items-center gap-4 px-4">
           <IntroSpan text={"مرحباً بك في عدسة"} page={"home"} />
-          <h1 className="fw-bold text-5xl text-center mt-4">
+          <h1 className="fw-bold text-5xl  text-center mt-4">
             <span className="d-block">
               اكتشف <span className="orange-gradient1 bg-clip-text">فن </span>
             </span>
             <span className="d-block">التصوير الفوتوغرافي</span>
           </h1>
-          <p className="text-xl gray100-text text-center">
+          <p className="text-xl text-lg-2xl gray100-text text-center">
             انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في التصوير.
           </p>
           <div className="d-flex gap-3 align-items-center justify-content-center flex-column flex-md-row w-100 w-md-fit mb-4">
@@ -33,6 +36,7 @@ export default function Home() {
               color={"orangeGradient4"}
               icon={"fa-solid fa-arrow-left-long me-2"}
               iconPosition={"left"}
+              hover={"translate"}
             />
             <Button
               direct={"about"}
@@ -42,6 +46,8 @@ export default function Home() {
               color={"transparentGray"}
               icon={"fa-solid fa-info ms-2"}
               iconPosition={"right"}
+               hover={"color"}
+
             />
           </div>
           <div className="row g-3 w-100 mb-5">
@@ -58,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-5 bg-black ">
+      <section className="py-5 bg-gray-700 section-gradient-right">
         <div className="container-fluid container-xl">
           <IntroSpan text={"مميز"} page={"home"} />
           <h2 className="text-4xl fw-bold mt-3">مقالات مختارة</h2>
@@ -72,6 +78,8 @@ export default function Home() {
               color={"orangeGradient4"}
               icon={"fa-solid fa-chevron-left me-2"}
               iconPosition={"left"}
+                            hover={"translate"}
+
             />
           </div>
           {posts.slice(0, 3).map((post) => (
@@ -84,12 +92,14 @@ export default function Home() {
               image={post.image}
               date={post.date}
               readTime={post.readTime}
+                                page={"home"}
+
             />
           ))}
         </div>
       </section>
 
-      <section className="py-5 bg-gray-600 ">
+      <section className="py-5 bg-gray-600 border-bottom border-top border-light border-opacity-10 ">
         <div className="container-fluid container-xl">
           <div className="d-flex flex-column align-items-center justify-content-center ">
             <IntroSpan text={"التصنيفات"} page={"home"} />
@@ -113,7 +123,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-5 bg-black ">
+      <section className="py-5 bg-gray-700 section-gradient-left">
         <div className="container-fluid container-xl">
           <IntroSpan text={"الأحدث"} page={"home"} />
           <h2 className="text-4xl fw-bold mt-3">أحدث المقالات</h2>
@@ -144,7 +154,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-5 bg-black ">
+      <section className="py-5 bg-gray-700 ">
+        
         <div className="container-fluid container-xl ">
           <div className="contact bg-gray-500 p-4 rounded-4 gray-border text-center">
             <span className="envelope-icon w-64 h-64 orange-gradient3 d-flex align-items-center justify-content-center rounded-4 m-auto mb-4">

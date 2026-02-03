@@ -42,9 +42,12 @@ function filterPosts(posts, activeCategory, searchValue) {
   
   return (
     <>
-      <section className=" py-5 bg-black">
+      <section className=" py-5 square-pattern overflow-hidden">
+        <div className="gradient1"></div>
+        <div className="gradient2"></div>
+        <div className="gradient3"></div>
         <div className="container-fluid container-xl">
-          <div className="pt-5 bg-black d-flex flex-column justify-content-center align-items-center gap-3">
+          <div className="pt-5  d-flex flex-column justify-content-center align-items-center gap-3">
             <IntroSpan text={"مدونتنا"} page={"blog"} />
             <h1 className="fw-bold text-4xl">
               استكشف{" "}
@@ -60,7 +63,7 @@ function filterPosts(posts, activeCategory, searchValue) {
         </div>
       </section>
 
-       <section className="filter py-5 bg-black position-sticky  gray-border z-2">
+       <section className="filter py-3  bg-gray-700 position-sticky border-bottom border-light border-opacity-10  z-2">
           <div className="container-fluid container-xl">
             <div className="topics d-md-flex justify-content-between align-items-center">
              <div className="search position-relative">
@@ -69,6 +72,7 @@ function filterPosts(posts, activeCategory, searchValue) {
              </div>
               <div className="mt-3 gap-2 d-flex align-items-center flex-wrap justify-content-center">
                 <Button action={()=>setActiveCategory("all")} text="جميع المقالات"
+                
               shape={"rounded4"}
               size={"sm"}
               color={"orangeGradient3"}/>
@@ -81,11 +85,11 @@ function filterPosts(posts, activeCategory, searchValue) {
           </div>
        </section>
       
-       <section className=" py-5 bg-black">
+       <section className=" py-5 bg-gray-700 position-relative z-1 ">
          <div className="container-fluid container-xl">
           <div className="row">
             {filterPosts(posts, activeCategory, searchValue).map(post=><div className="col-12 col-md-6 col-lg-4" key={post.id}><ArticleCard
-            
+            page={"blog"}
              image={post.image}
              category={post.category}
              readTime={post.readTime}

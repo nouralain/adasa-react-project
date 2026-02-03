@@ -1,0 +1,21 @@
+.translate-top-hover:hover{
+   transform: translateY(-3px);
+}
+.translate-top-hover:hover i{
+    transform: translateX(-3px);
+}
+.change-color-and-bg-hover:hover{
+    color: var(--orange300) !important;
+    border:1px solid var(--orange300) ;
+    background-color:#f974161d !important;
+   
+}
+.my-btn{
+    transition: all 0.3s;
+}
+.bg-transparent{
+    background-color: transparent;
+}
+.no-border{
+    border: transparent;
+}

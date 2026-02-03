@@ -1,14 +1,19 @@
 import React from 'react'
 import "./ArticleCard.css"
-export default function ArticleCard({image,category ,readTime,info,title ,author,date}) {
+import ImgSpan from './imgSpan'
+export default function ArticleCard({image,category ,readTime,info,title ,author,date,page }) {
+  
   return (
 <>
-<figure className='rounded-4 overflow-hidden gray-border'>
-<div className="fig-image"><img src={image} alt="" className='w-100'/></div>
+<figure className={`rounded-4 overflow-hidden gray-border ${page==="home" && "d-md-flex"}`}>
+<div className="fig-image position-relative">
+  <img src={image} alt="" className='w-100 h-100 object-cover'/>
+  <ImgSpan color={"orange-gradient1" } text={"مميز"}/>
+  </div>
 <figcaption className='p-4 bg-gray-500'>
 <div>
     <span className='category-span text-xs fw-semibold orange300-text py-1 px-3 rounded-pill'>{category}</span>
-<span className='text-sm gray200-text me-2'><i class="fa-regular fa-clock fa-sm "></i> {readTime}</span>
+<span className='text-sm gray200-text me-2'><i className="fa-regular fa-clock fa-sm "></i> {readTime}</span>
 </div>
 
 <h3 className='text-2xl fw-bold my-4'>{title}</h3>

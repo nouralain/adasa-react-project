@@ -50,11 +50,16 @@ html {
   --text-6xl: 3.75rem;
   --text-6xl-line-height: 75px;
 
+  --text-7xl: 4.5rem;
+  --text-7xl-line-height: 80px;
+
   --gray100:#A1A1A1;
   --gray200:#737373;
   --gray300:#525252;
   --gray500: #161616;
 --gray600:#111111;
+--gray700: #0A0A0A;
+--gray-transparent: #070707e6;
 --border-color: #262626;
 --orange100:#FA9B1D;
 --orange200:#ff8904;
@@ -101,6 +106,12 @@ html {
 }
 .bg-gray-600{
   background-color: var(--gray600);
+}
+.bg-gray-700{
+  background-color: var(--gray700);
+}
+.bg-gray-transparent{
+  background-color: var(--gray-transparent);
 }
 
 .orange-gradient1{
@@ -172,6 +183,10 @@ a {
   font-size: var(--text-6xl);
   line-height: var(--text-6xl-line-height);
 }
+.text-7xl {
+  font-size: var(--text-7xl);
+  line-height: var(--text-7xl-line-height);
+}
 
 .cursor-pointer {
   cursor: pointer;
@@ -182,6 +197,9 @@ a {
 
 .object-center {
   object-position: center;
+}
+.object-cover{
+  object-fit: cover;
 }
 
 .w-24{
@@ -242,3 +260,54 @@ background-clip: text;
   .fit-content{
     width: fit-content;
   }
+
+  .square-pattern{
+  background-color: #0A0A0A;
+opacity: 1;
+background-image:  linear-gradient(#131313 1px, transparent 1px), linear-gradient(to right, #131313 1px, #0A0A0A 1px);
+background-size: 60px 60px;
+  }
+
+  .gradient1{
+    width: 350px;
+    height: 350px;
+    background-image:  radial-gradient(circle,rgba(255, 106, 0, 0.146) 0%, rgba(255, 105, 0, 0) 70%);
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+  }
+  .gradient2{
+    width: 500px;
+    height: 500px;
+    background-image:  radial-gradient(circle,rgba(255, 106, 0, 0.057) 0%, rgba(255, 105, 0, 0) 70%);
+    position: absolute;
+    top: 100px;
+    left: 500px;
+        z-index: 1;
+
+  }
+  .gradient3{
+    width: 450px;
+    height: 450px;
+    background-image:  radial-gradient(circle,#f0b0001e 0%, rgba(255, 105, 0, 0) 70%);
+    position: absolute;
+    top: 200px;
+    right: 20px;
+        z-index: 1;
+
+  }
+
+  .section-gradient-right{
+    background-image: linear-gradient(270deg,rgba(255, 106, 0, 0.068) 0%, rgba(255, 105, 0, 0) 35%);;
+  }
+  .section-gradient-left{
+    background-image: linear-gradient(90deg,rgba(255, 106, 0, 0.068) 0%, rgba(255, 105, 0, 0) 35%);;
+  }
+
+  .back-drop-filter{
+     -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  }
+
+ 

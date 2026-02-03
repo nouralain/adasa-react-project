@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-md gray500-bg py-3 fixed-top">
+      <nav className="navbar back-drop-filter navbar-expand-md  bg-opacity-50 bg-gray-transparent py-3 fixed-top">
         <div className="container-fluid container-xl ">
           <NavLink
             className="d-flex justify-content-between align-items-center gap-3"
@@ -33,7 +33,8 @@ export default function Navbar() {
 
           {/* links in web view*/}
 
-          <div className="navbar-nav d-none d-md-flex align-items-center gap-3">
+          <div className="navbar-nav d-none d-md-flex align-items-center gap-3 border border-light border-opacity-10 rounded-pill p-2">
+            
             <NavLink className="nav-link web" to="/">
               الرئيسية
             </NavLink>
@@ -53,6 +54,8 @@ export default function Navbar() {
               shape={"pill"}
               size={"md"}
               color={"orangeGradient4"}
+                            hover={"translate"}
+
             />
           </div>
 
@@ -70,15 +73,15 @@ export default function Navbar() {
 
           {/* links in mobile view */}
         </div>
-        <div className=" collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div className=" collapse navbar-collapse md-d-none " id="navbarNavAltMarkup">
           <div className="navbar-nav mobile md-d-none">
-            <NavLink className="nav-link " aria-current="page" to="/">
+            <NavLink className="nav-link mobile  " aria-current="page" to="/">
               الرئيسية
             </NavLink>
-            <NavLink className="nav-link " aria-current="page" to="blog">
+            <NavLink className="nav-link mobile " aria-current="page" to="blog">
               المدونة
             </NavLink>
-            <NavLink className="nav-link " aria-current="page" to="about">
+            <NavLink className="nav-link mobile mb-3 " aria-current="page" to="about">
               من نحن
             </NavLink>
             <Button

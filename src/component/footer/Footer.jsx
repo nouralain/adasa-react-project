@@ -11,9 +11,11 @@ export default function Footer() {
  
   return (
     <>
-      <footer className=" bg-black">
+      <footer className=" bg-gray-700 border-top border-light border-opacity-10 position-relative overflow-hidden">
+         <div className="gradient2"></div>
+        <div className="gradient3"></div>
         <div className="container-fluid container-xl">
-          <div className="row  py-5 gray-border">
+          <div className="row  py-5">
             <div className="col-12 col-md-6 col-lg-3 mt-5">
               
                 <div className="logo d-flex align-items-center gap-2">
@@ -72,19 +74,21 @@ export default function Footer() {
                   shape={"pill"}
                   size={"lg"}
                   color={"orangeGradient3"}
+                                hover={"translate"}
+
                 />
               </div>
             </div>
 
-            <div className="text-center pt-3 d-md-flex align-items-md-center justify-content-sm-between">
+          
+        </div> 
+            <div className="text-center border-top border-light border-opacity-10 pt-3 d-md-flex align-items-md-center justify-content-sm-around ">
               <p className="text-sm gray300-text ">© 2026 عدسة. صنع بكل <i className="fa-solid fa-heart orange500-text"></i> جميع الحقوق محفوظة</p>
               <div>
                 <a href="" className="gray300-text text-sm ms-4">سياسة الخصوصية</a>
                 <a href="" className="gray300-text text-sm">شروط الخدمة</a>
               </div>
             </div>
-          
-        </div>
       </footer>
     </>
   );

@@ -34,13 +34,14 @@ export default function About() {
   const { posts } = response;
   return (
     <>
-      <section className=" py-5 bg-black">
-        <div className="container-fluid container-xl">
-          <div className="pt-5 bg-black d-flex flex-column justify-content-center align-items-center gap-3">
+      <section className=" py-5 square-pattern position-relative overflow-hidden">
+         <div className="gradient1"></div>
+ <div className="gradient3"></div>
+        <div className="container-fluid container-xl position-relative z-1">
+          <div className="pt-5  d-flex flex-column justify-content-center align-items-center gap-3">
             <IntroSpan text={"من نحن"} page={"about"} />
             <h1 className="fw-bold text-4xl">
-              مهمتنا هي
-              <span className="orange-gradient1 bg-clip-text">
+              مهمتنا هي <span className="orange-gradient1 bg-clip-text">
                 الإعلام والإلهام
               </span>
             </h1>
@@ -88,7 +89,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className=" py-5 bg-black">
+      <section className=" py-5 bg-gray-700">
         <div className="container-fluid container-xl">
           <div className="section-header d-flex align-items-center justify-content-center flex-column gap-3">
             <IntroSpan text={"فريقنا"} page={""} />

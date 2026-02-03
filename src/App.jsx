@@ -10,6 +10,7 @@ export default function App() {
       element: <MainLayout />,
       children: [
         { index: true, element: <Home /> },
+        {path:"home",element:<Home />},
         { path: "blog", element: <Blog /> },
         { path: "about", element: <About /> },
       ],
